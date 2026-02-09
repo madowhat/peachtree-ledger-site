@@ -1,11 +1,15 @@
 :root {
-  --text: #111;
-  --muted: #555;
-  --border: #e5e5e5;
-  --bg: #fff;
-  --bg-subtle: #fafafa;
+  --text: #0b1220;
+  --muted: #4b5563;
+  --border: #e5e7eb;
+
+  --bg: #ffffff;
+  --bg-subtle: #f3f8f5;
+
+  --primary: #14532D;      /* brand green */
+  --primary-dark: #0F2F1A; /* hover/darker */
   --max: 1080px;
-  --radius: 10px;
+  --radius: 12px;
 }
 
 * { box-sizing: border-box; }
@@ -30,7 +34,9 @@ a:hover { text-decoration: underline; }
   background: #fff;
   position: sticky;
   top: 0;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.03);
 }
+
 
 .header-row {
   display: flex;
@@ -52,6 +58,13 @@ a:hover { text-decoration: underline; }
   flex-wrap: wrap;
 }
 
+.nav a:hover { text-decoration: none; }
+
+a {
+  color: var(--primary);
+}
+a.btn { color: inherit; }
+
 .btn {
   display: inline-block;
   padding: 10px 14px;
@@ -60,9 +73,14 @@ a:hover { text-decoration: underline; }
 }
 
 .btn-primary {
-  background: #111;
+  background: var(--primary);
   color: #fff;
-  border-color: #111;
+  border-color: var(--primary);
+}
+.btn-primary:hover {
+  background: var(--primary-dark);
+  border-color: var(--primary-dark);
+  text-decoration: none;
 }
 
 .btn-secondary {
@@ -118,6 +136,7 @@ a:hover { text-decoration: underline; }
   border-radius: var(--radius);
   padding: 18px;
   background: #fff;
+  box-shadow: 0 1px 8px rgba(15, 23, 42, 0.04);
 }
 
 .card h2 { margin-top: 0; }
