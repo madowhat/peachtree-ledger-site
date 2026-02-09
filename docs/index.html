@@ -1,10 +1,116 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Peachtree Ledger</title>
-  </head>
-  <body>
-    <h1>Peachtree Ledger</h1>
-    <p>Payroll &amp; Bookkeeping Services</p>
-  </body>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Peachtree Ledger | Payroll & Bookkeeping</title>
+  <meta name="description" content="Peachtree Ledger provides payroll and bookkeeping services for small businesses." />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container header-row">
+      <a class="brand" href="index.html">Peachtree Ledger</a>
+
+      <nav class="nav">
+        <a href="payroll.html">Payroll</a>
+        <a href="bookkeeping.html">Bookkeeping</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="about.html">About</a>
+        <a class="btn btn-primary" href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1>Payroll and bookkeeping for small businesses.</h1>
+        <p class="lead">
+          Accurate processing, clear records, and straightforward support.
+        </p>
+
+        <div class="cta-row">
+          <a class="btn btn-primary" href="contact.html">Request a Quote</a>
+          <a class="btn btn-secondary" href="payroll.html">View Payroll Services</a>
+        </div>
+
+        <ul class="highlights">
+          <li>Multi-state payroll (GA, AL, TN, FL)</li>
+          <li>Monthly bookkeeping and reconciliations</li>
+          <li>Clear scope, clear deliverables</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container grid-2">
+        <div class="card">
+          <h2>Payroll</h2>
+          <p>Run payroll, produce paystubs, and keep filings organized and on time.</p>
+          <a href="payroll.html">Payroll details →</a>
+        </div>
+
+        <div class="card">
+          <h2>Bookkeeping</h2>
+          <p>Monthly categorization, reconciliations, and reports you can trust.</p>
+          <a href="bookkeeping.html">Bookkeeping details →</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section subtle">
+      <div class="container">
+        <h2>How it works</h2>
+        <ol class="steps">
+          <li><strong>Onboard:</strong> collect payroll/bookkeeping info and set up your workflow.</li>
+          <li><strong>Operate:</strong> you provide inputs; I process and send for approval.</li>
+          <li><strong>Close:</strong> monthly reports and a clean record trail.</li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2>Quick FAQs</h2>
+        <div class="faq">
+          <div>
+            <h3>Do you initiate payments?</h3>
+            <p>No payments are initiated without client approval. Options depend on your bank and preferences.</p>
+          </div>
+          <div>
+            <h3>What businesses are a good fit?</h3>
+            <p>Service businesses with straightforward payroll and a focus on staying compliant.</p>
+          </div>
+          <div>
+            <h3>Do you offer benefits administration?</h3>
+            <p>Available as an add-on if you need it. Most clients start with payroll + bookkeeping first.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section cta-band">
+      <div class="container cta-band-row">
+        <div>
+          <h2>Ready for a quote?</h2>
+          <p>Send a few details and I’ll respond with next steps.</p>
+        </div>
+        <a class="btn btn-primary" href="contact.html">Contact</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-row">
+      <p>© <span id="year"></span> Peachtree Ledger. All rights reserved.</p>
+      <p><a href="contact.html">Contact</a></p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
 </html>
